@@ -16,6 +16,9 @@
  ticket_lifetime = <%= $winbind::krb5_ticket_lifetime %>
  renew_lifetime = <%= $winbind::krb5_renew_lifetime %>
  forwardable = <%= $winbind::krb5_forwardable %>
+ <%- if $winbind::krb5_rdns != true { -%>
+ rdns = <%= $winbind::krb5_rdns %>
+ <%- } -%>
 
 [realms]
 <%= $winbind::smb_realm.upcase %> = {

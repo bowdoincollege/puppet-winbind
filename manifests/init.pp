@@ -18,6 +18,7 @@ class winbind (
   Boolean              $krb5_dns_lookup_realm,
   Boolean              $krb5_forwardable,
   String               $krb5_kdc,
+  Boolean              $krb5_rdns,
   String               $krb5_renew_lifetime,
   String               $krb5_ticket_lifetime,
   Boolean              $manage_joindomain_script,
